@@ -3,23 +3,23 @@ import json
 
 
 def calc(a):
-    s=0
+    s = 0
     for x in a:
-        s=s+x
-    return s/(len(a)+1)
+        s = s + x
+    return s / (len(a) + 1)
 
 
 def mx(a):
-    m=0
+    m = 0
     for x in a:
-        if x>m:
-            m=x
+        if x > m:
+            m = x
     return m
 
 
 def countpos(a):
-    c=0
+    c = 0
     for x in a:
-        if x>=0:
-            c=c+1
+        if x >= 0:
+            c = c + 1
     return c
