@@ -1,5 +1,3 @@
-import math
-import json
 
 
 def calc(a):
@@ -12,8 +10,7 @@ def calc(a):
 def mx(a):
     m = 0
     for x in a:
-        if x > m:
-            m = x
+        m = max(m, x)
     return m
 
 
