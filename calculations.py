@@ -1,6 +1,7 @@
-
-
 def calculate_average(list_of_numbers):
+    if not list_of_numbers:
+        raise ValueError("Список не должен быть пустым") 
+    
     summa = 0
     for number in list_of_numbers:
         summa = summa + number

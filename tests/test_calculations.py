@@ -1,7 +1,13 @@
 from calculations import calculate_average, count_positive, find_max
+import pytest
+
+
+def test_average_empty_list():
+    with pytest.raises(ValueError):
+        calculate_average([])
 
 def test_average_positive():
-    assert calculate_average([10, 20, 30]) == 30
+    assert calculate_average([10, 20, 30]) == 20
 
 def test_average_single_value():
     assert calculate_average([5]) == 5
