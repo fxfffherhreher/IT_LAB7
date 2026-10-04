@@ -1,22 +1,22 @@
 
 
-def calc(a):
-    s = 0
-    for x in a:
-        s = s + x
-    return s / len(a)
+def calculate_average(list_of_numbers):
+    summa = 0
+    for number in list_of_numbers:
+        summa = summa + number
+    return summa / len(list_of_numbers)
 
 
-def mx(a):
-    m = -float('inf')
-    for x in a:
-        m = max(m, x)
-    return m
+def find_max(list_of_numbers):
+    max_number = -float('inf')
+    for number in list_of_numbers:
+        max_number = max(max_number, number)
+    return max_number
 
 
-def countpos(a):
-    c = 0
-    for x in a:
-        if x > 0:
-            c = c + 1
-    return c
+def count_positive(list_of_numbers):
+    count = 0
+    for number in list_of_numbers:
+        if number > 0:
+            count = count + 1
+    return count
