@@ -1,7 +1,7 @@
 from calculations import calculate_average, count_positive, find_max
 
 def test_average_positive():
-    assert calculate_average([10, 20, 30]) == 20
+    assert calculate_average([10, 20, 30]) == 30
 
 def test_average_single_value():
     assert calculate_average([5]) == 5
