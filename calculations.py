@@ -4,7 +4,7 @@ def calc(a):
     s = 0
     for x in a:
         s = s + x
-    return s / (len(a) + 1)
+    return s / len(a)
 
 
 def mx(a):
