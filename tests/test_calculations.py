@@ -1,6 +1,34 @@
 import pytest
 
-from calculations import calculate_average, count_positive, find_max
+from calculations import analyze, calculate_average, count_positive, find_max
+
+
+def test_analyze_mixed_numbers():
+    assert analyze([3, -2, 7, 0]) == (-2, 7, 2)
+
+
+def test_analyze_all_positive():
+    assert analyze([5, 10, 15]) == (5, 15, 10)
+
+
+def test_analyze_all_negative():
+    assert analyze([-5, -10, -15]) == (-15, -5, -10)
+
+
+def test_analyze_single_value():
+    assert analyze([4]) == (4, 4, 4)
+
+
+def test_analyze_equal_values():
+    assert analyze([2, 2, 2]) == (2, 2, 2)
+
+
+def test_analyze_float_average():
+    assert analyze([1, 2]) == (1, 2, 1.5)
+
+
+def test_analyze_empty_list():
+    assert analyze([]) is None
 
 
 def test_average_empty_list():
