@@ -1,3 +1,3 @@
-from calculations import mx
+from calculations import countpos
 
-print(mx([-10, -5, -20]))
+print(countpos([-1, 0, 1]))

@@ -17,6 +17,6 @@ def mx(a):
 def countpos(a):
     c = 0
     for x in a:
-        if x >= 0:
+        if x > 0:
             c = c + 1
     return c
