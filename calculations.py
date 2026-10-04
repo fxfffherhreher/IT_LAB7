@@ -1,7 +1,7 @@
 def calculate_average(list_of_numbers):
     if not list_of_numbers:
-        raise ValueError("Список не должен быть пустым") 
-    
+        raise ValueError("Список не должен быть пустым")
+
     summa = 0
     for number in list_of_numbers:
         summa = summa + number
@@ -9,7 +9,7 @@ def calculate_average(list_of_numbers):
 
 
 def find_max(list_of_numbers):
-    max_number = -float('inf')
+    max_number = -float("inf")
     for number in list_of_numbers:
         max_number = max(max_number, number)
     return max_number

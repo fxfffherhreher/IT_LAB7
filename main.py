@@ -1,4 +1,4 @@
-from calculations import calculate_average, find_max, count_positive
+from calculations import calculate_average, count_positive, find_max
 
 assert calculate_average([10, 20, 30]) == 20
 assert find_max([-10, -5, -20]) == -5
