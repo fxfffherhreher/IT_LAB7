@@ -8,7 +8,7 @@ def calc(a):
 
 
 def mx(a):
-    m = 0
+    m = -float('inf')
     for x in a:
         m = max(m, x)
     return m

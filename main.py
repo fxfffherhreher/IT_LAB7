@@ -1,3 +1,3 @@
-from calculations import calc
+from calculations import mx
 
-print(calc([10, 20, 30]))
+print(mx([-10, -5, -20]))
